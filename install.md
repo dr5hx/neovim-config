@@ -14,7 +14,7 @@
 
    ```sh
    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-          https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+          https://ghproxy.com/https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
    ```
 
 3. 创建`nvim`的配置文件
@@ -400,8 +400,14 @@
    ```
    pip install pynvim
    ```
+6. 安装 `node npm`
 
-6. 安装`COC`插件
+   ```
+   sudo apt install nodejs npm
+   npm install -g neovim
+   ```
+
+7. 安装`COC`插件
 
    ```visual basic
    :CocInstall coc-clangd # C++环境插件
@@ -420,7 +426,8 @@
    :CocInstall coc-pairs
    ```
 
-7.  额外
+
+8. 额外
 
    1. `[coc.nvim] clangd was not found on your PATH. :CocCommand clangd.install will install 10.0.0.`问题
 
