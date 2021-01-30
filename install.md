@@ -398,13 +398,18 @@
 5.  安装`python3` 和 `pynvim`
 
    ```
+   wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+   bash anaconda3-5.3.1-Linux-x86_64.sh
+   source ~/.bashrc
+   pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
    pip install pynvim
    ```
 6. 安装 `node npm`
 
    ```
    sudo apt install nodejs npm
-   npm install -g neovim
+   sudo apt install ctags
+   sudo npm install -g neovim
    ```
 
 7. 安装`COC`插件
@@ -433,8 +438,6 @@
 
       1. ```bash
          # ubuntu
-         sudo apt-get install clangd-9
-         sudo apt-get install clang
+         sudo apt-get install clangd
          ```
-
    
