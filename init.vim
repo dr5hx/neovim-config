@@ -289,6 +289,8 @@ set fileencoding=utf-8
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+" 鼠标滚动
+set mouse=a
 
 " autocmd FileType json syntax match Comment +\/\/.\+$+
 set foldmethod=indent " 设置默认折叠方式为缩进
@@ -338,13 +340,21 @@ func SetTitle()
 		call append(line(".")+5, "")
 	endif
 	if expand("%:e") == 'cpp'
-		call append(line(".")+6, "#include<iostream>")
-		call append(line(".")+7, "using namespace std;")
-		call append(line(".")+8, "")
+		call append(line(".")+6, "#include <iostream>")
+		call append(line(".")+7, "#include <cstdio>")
+		call append(line(".")+8, "#include <cstdlib>")
+		call append(line(".")+9, "#include <cstring>")
+		call append(line(".")+10,"#include <algorithm>")
+		call append(line(".")+11,"#include <vector>")
+		call append(line(".")+12, "#include <map>")
+		call append(line(".")+13, "#include <cmath>")
+		call append(line(".")+14, "#include <queue>")
+		call append(line(".")+15, "using namespace std;")
+		call append(line(".")+16, "")
 	endif
 	if &filetype == 'c'
-		call append(line(".")+6, "#include<stdio.h>")
-		call append(line(".")+7, "#include<stdlib.h>")
+		call append(line(".")+6, "#include <stdio.h>")
+		call append(line(".")+7, "#include <stdlib.h>")
 		call append(line(".")+8, "")
 	endif
 	if expand("%:e") == 'h'
