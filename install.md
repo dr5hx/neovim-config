@@ -418,6 +418,7 @@
    :CocInstall coc-clangd # C++环境插件
    :CocInstall coc-cmake  # Cmake 支持
    :CocInstall coc-emmet  
+   :CocInstall coc-go # go支持
    :CocInstall coc-git    # git 支持
    :CocInstall coc-highlight  # 高亮支持
    :CocInstall coc-jedi   # jedi
